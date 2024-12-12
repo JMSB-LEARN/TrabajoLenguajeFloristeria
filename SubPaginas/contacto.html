@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Floristeria Amber Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/navmenu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/general.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/personalizado.css'>
+
+</head>
+
+<body>
+    <header class="fixheader">
+        <div class="menu">
+            <h1>Floristeria</h1>
+            <img src="../Imagenes/LogoTransparente.webp" alt="">
+            <h1> Amber</h1>
+            <div>
+                <a href="../index.html"><button class="navbtn">Home</button></a>
+                <div class="dropdown">
+                    <a href="ramos.html">
+                        <button class="navbtn">Ramos▾</button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="recomendaciones.html">Las recomendaciones de Amber</a>
+                        <a href="personalizado.html">Ramos personalizados</a>
+                    </div>
+                </div>
+                <a href="contacto.html"><button class="navbtn">Contacto</button></a>
+            </div>
+        </div>
+        <div class="gradiante"></div>
+    </header>
+    <div class="main">
+        <div>
+            <h1>Esta floristeria esta creada para rendir homenaje a la pequeña <a class="amber"
+                    href="https://es.wikipedia.org/wiki/Amber_Hagerman">Amber Hagerman</a></h1>
+            <p>Amber Hagerman fue una niña de nueve años que fue secuestrada y asesinada en Arlington, Texas en 1996. Su
+                caso inspiró la creación del programa Amber Alert, un sistema de avisos públicos para ayudar a encontrar
+                a niños desaparecidos. La muerte de Amber conmocionó a la comunidad y llevó a la implementación de
+                medidas de seguridad más estrictas para proteger a los niños. A pesar de que su asesino nunca fue
+                encontrado, el legado de Amber vive a través de la iniciativa que lleva su nombre y que ha ayudado a
+                salvar la vida de muchos niños en peligro.</p>
+        </div>
+        <div>
+            <h1> Si tienes alguna informacion que pueda servir para salvar alguna vida mas puedes rellenar este formulario para ayudar a las autoridades competentes:</h1>
+            <form action="ContactarAutoridades.php" method="get">
+                <div>
+                    <div>
+                        <p>1. ¿Que flor quieres como base?</p>
+                        <p><input required type="radio" name="florbase" value="rosa" />Rosas</p>
+                        <p><input type="radio" name="florbase" value="tulipane" />Tulipanes</p>
+                        <p><input type="radio" name="florbase" value="beladonna" />Beladonnas</p>
+                        <p><input type="radio" name="florbase" value="azuzena" />Azuzenas</p>
+                        <p><input type="radio" name="florbase" value="lirio" />Lirios</p>
+                        <p><input type="radio" name="florbase" value="amapola" />Amapolas</p>
+                        <p><input type="radio" name="florbase" value="wisteria" />Wisterias</p>
+                    </div>
+                    <div>
+                        <p>2. ¿Que flor quieres como Acento?</p>
+                        <p><input type="checkbox" name="florAcento" value="rosa" />Rosas</p>
+                        <p><input type="checkbox" name="florAcento" value="tulipane" />Tulipanes</p>
+                        <p><input type="checkbox" name="florAcento" value="beladonna" />Beladonnas</p>
+                        <p><input type="checkbox" name="florAcento" value="azuzena" />Azuzenas</p>
+                        <p><input type="checkbox" name="florAcento" value="lirio" />Lirios</p>
+                        <p><input type="checkbox" name="florAcento" value="amapola" />Amapolas</p>
+                        <p><input type="checkbox" name="florAcento" value="wisteria" />Wisterias</p>
+                    </div>
+                    <div>
+                        <p>3. ¿Que accesorio quieres?</p>
+                        <p><input required type="radio" name="accesorio" value="abeja" />Abejita</p>
+                        <p><input type="radio" name="accesorio" value="estrella" />Estrella</p>
+                        <p><input type="radio" name="accesorio" value="lazo" />Lazo</p>
+                        <p><input type="radio" name="accesorio" value="cinta" />Cintas</p>
+                        <p><input type="radio" name="accesorio" value="calabaza" />Calabazas</p>
+                        <p><input type="radio" name="accesorio" value="limon" />Limones</p>
+                        <p><input type="radio" name="accesorio" value="none" />Ninguno</p>
+                    </div>
+                    <div>
+                        <p>Color del papel del ramo: <input required type="color" name="color" /></p>
+                        <p>Texto nota: <input type="text" pattern=".{0,150}" name="nota" placeholder="I love you" /></p>
+                    </div>
+                </div>
+                <div>
+                    <p><input type="submit" value="Enviar" /></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Amber & C.O todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

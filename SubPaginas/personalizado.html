@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Floristeria Amber Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/navmenu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/general.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/personalizado.css'>
+
+</head>
+
+<body>
+    <header class="fixheader">
+        <div class="menu">
+            <h1>Floristeria</h1>
+            <img src="../Imagenes/LogoTransparente.webp" alt="">
+            <h1> Amber</h1>
+            <div>
+                <a href="../index.html"><button class="navbtn">Home</button></a>
+                <div class="dropdown">
+                    <a href="ramos.html">
+                        <button class="navbtn">Ramos▾</button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="recomendaciones.html">Las recomendaciones de Amber</a>
+                        <a href="personalizado.html">Ramos personalizados</a>
+                    </div>
+                </div>
+                <a href="contacto.html"><button class="navbtn">Contacto</button></a>
+            </div>
+        </div>
+        <div class="gradiante"></div>
+    </header>
+    <div class="main">
+        <div>
+            <h1> Crea tu ramo soñado con las flores que mas te interesan:</h1>
+            <form action="ramorersonalizado.php" method="get">
+                <div>
+                    <div>
+                        <p>1. ¿Que flor quieres como base?</p>
+                        <p><input required type="radio" name="florbase" value="rosa" />Rosas</p>
+                        <p><input type="radio" name="florbase" value="tulipane" />Tulipanes</p>
+                        <p><input type="radio" name="florbase" value="beladonna" />Beladonnas</p>
+                        <p><input type="radio" name="florbase" value="azuzena" />Azuzenas</p>
+                        <p><input type="radio" name="florbase" value="lirio" />Lirios</p>
+                        <p><input type="radio" name="florbase" value="amapola" />Amapolas</p>
+                        <p><input type="radio" name="florbase" value="wisteria" />Wisterias</p>
+                    </div>
+                    <div>
+                        <p>2. ¿Que flor quieres como Acento?</p>
+                        <p><input type="checkbox" name="florAcento" value="rosa" />Rosas</p>
+                        <p><input type="checkbox" name="florAcento" value="tulipane" />Tulipanes</p>
+                        <p><input type="checkbox" name="florAcento" value="beladonna" />Beladonnas</p>
+                        <p><input type="checkbox" name="florAcento" value="azuzena" />Azuzenas</p>
+                        <p><input type="checkbox" name="florAcento" value="lirio" />Lirios</p>
+                        <p><input type="checkbox" name="florAcento" value="amapola" />Amapolas</p>
+                        <p><input type="checkbox" name="florAcento" value="wisteria" />Wisterias</p>
+                    </div>
+                    <div>
+                        <p>3. ¿Que accesorio quieres?</p>
+                        <p><input required type="radio" name="accesorio" value="abeja" />Abejita</p>
+                        <p><input type="radio" name="accesorio" value="estrella" />Estrella</p>
+                        <p><input type="radio" name="accesorio" value="lazo" />Lazo</p>
+                        <p><input type="radio" name="accesorio" value="cinta" />Cintas</p>
+                        <p><input type="radio" name="accesorio" value="calabaza" />Calabazas</p>
+                        <p><input type="radio" name="accesorio" value="limon" />Limones</p>
+                        <p><input type="radio" name="accesorio" value="none" />Ninguno</p>
+                    </div>
+                    <div>
+                        <p>Color del papel del ramo: <input required type="color" name="color" /></p>
+                        <p>Texto nota: <input type="text" pattern=".{0,150}" name="nota" placeholder="I love you" /></p>
+                    </div>
+                </div>
+                <div>
+                    <p><input type="submit" value="Enviar" /></p>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">¿Cuanto valen tus sentimientos?</td>
+                    </tr>
+                    <tr>
+                        <td>Flor</td>
+                        <td class="descripcionFlores">Descripcion</td>
+                        <td>Precio</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rosa</td>
+                        <td>Hermosas y de varios colores, perfectas para una gean variedad de ocasiones.</td>
+                        <td>1,6 €</td>
+                    </tr>
+                    <tr>
+                        <td>Tulipan</td>
+                        <td>Esencia de Holanda</td>
+                        <td>1,75 €</td>
+                    </tr>
+                    <tr>
+                        <td>Beladonna</td>
+                        <td>Hermosa pero mortal</td>
+                        <td>2,5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Azuzena</td>
+                        <td>Para el nene y para la nena</td>
+                        <td>2,1 €</td>
+                    </tr>
+                    <tr>
+                        <td>Lirio</td>
+                        <td>Como me llamaba mi ex</td>
+                        <td>4,5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Amapola</td>
+                        <td>De aqui se saca el opio</td>
+                        <td>1,5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Wisteria</td>
+                        <td>Base del ramo Fish</td>
+                        <td>1,01 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <footer>
+        <p>Amber & C.O todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

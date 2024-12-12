@@ -1,0 +1,88 @@
+.main {
+    background-color: lightgoldenrodyellow;
+    border-radius: 3vw;
+    
+    margin-bottom: 10vh;
+}
+
+.main>div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3wh;
+    row-gap: 3vh;
+
+}
+
+.main>div>h1 {
+    margin-top: 1em;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.main form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    row-gap: 3vh;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.main h1 {
+    height: fit-content;
+    margin: auto;
+}
+
+.main table {
+    width: fit-content;
+    flex-basis: 50%;
+    margin: auto;
+    border: solid goldenrod 0.4vh;
+
+    border-collapse: collapse;
+}
+
+form>div {
+    display: flex;
+    column-gap: 5vw;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+form>div>div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+form>div>div:last-child>p{
+    flex-basis: 51%;
+}
+thead>tr:first-child>td {
+    text-align: center;
+    font-weight: bolder;
+    
+    font-size: 2em;
+}
+
+td {
+    border: solid goldenrod 0.4vh;
+}
+
+form>div:first-child {
+    width: 100%;
+
+}
+
+form input[type=text] {
+    min-height: 5em;
+}
+
+[type=submit] {
+    margin: 40%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+td {
+    padding: 0.9vh 0.9vw;
+}
