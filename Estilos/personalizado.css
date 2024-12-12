@@ -1,8 +1,8 @@
 .main {
     background-color: lightgoldenrodyellow;
     border-radius: 3vw;
-    
-    margin-bottom: 10vh;
+    padding-bottom: 4vh;
+    margin-bottom: 6vh;
 }
 
 .main>div {
