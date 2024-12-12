@@ -1,0 +1,6 @@
+.main>div:hover:hover{
+    background-repeat: no-repeat;
+    transition: 30s;
+    transition-delay: 0s;
+    color: rgb(255, 0, 0);
+}
