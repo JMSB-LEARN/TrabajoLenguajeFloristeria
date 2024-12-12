@@ -18,27 +18,29 @@
     column-gap: 2vw;
 }
 
-.ramos a  {
+.ramos a {
     min-height: 13em;
     min-width: 10vw;
     text-align: center;
     max-width: 51vw;
 }
-.ramos a div {height: 100%;
-width: 100%;
 
-border: solid goldenrod 0.2vw;
-padding: 1em;
-display: flex;
-flex-wrap: wrap;
-aspect-ratio: 1/1.1;
-background-size: contain;
-background-repeat: space;
-background-size: 100% 100%;
-background-color: var(--color-Cartas);
+.ramos a div {
+    height: 100%;
+    width: 100%;
+    border: solid goldenrod 0.2vw;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    aspect-ratio: 1/1.1;
+    background-size: contain;
+    background-repeat: space;
+    background-size: 100% 100%;
+    background-color: var(--color-Cartas);
 }
+
 @media(min-width: 1400px) {
-    .ramos a  {
+    .ramos a {
         flex-basis: 15%
     }
 }
@@ -59,8 +61,10 @@ background-color: var(--color-Cartas);
     .ramos a {
         flex-basis: 90%;
     }
-    .main h1 {margin: auto;
-    margin-bottom: 0.5em;
+
+    .main h1 {
+        margin: auto;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -74,7 +78,7 @@ background-color: var(--color-Cartas);
     padding-right: 0.1%;
 }
 
-.ramos  H3 {
+.ramos H3 {
     width: fit-content;
     margin: auto;
     margin-top: 0.1em;
@@ -88,7 +92,8 @@ background-color: var(--color-Cartas);
     height: fit-content;
     align-self: flex-end;
 }
-.main h1{
+
+.main h1 {
     padding: 0.1em;
     background-color: var(--color-Cartas);
     font-size: 3vw;
@@ -96,11 +101,11 @@ background-color: var(--color-Cartas);
     width: fit-content;
 }
 
-.ramos a div:nth-child(even) {
+.ramos a:nth-child(even) div {
     border-radius: 1em 3em;
 }
 
-.ramos a div:nth-child(odd) {
+.ramos a:nth-child(odd) div {
     border-radius: 3em 1em;
 }
 
@@ -131,7 +136,7 @@ background-color: var(--color-Cartas);
 }
 
 .popcorn {
-    background-image: url(../Imagenes/Flores/popcorn.jpg);  
+    background-image: url(../Imagenes/Flores/popcorn.jpg);
 }
 
 .pureza {
@@ -149,33 +154,43 @@ background-color: var(--color-Cartas);
 .canat {
     background-image: url(../Imagenes/Flores/gothic.webp);
 }
-.matador{
+
+.matador {
     background-image: url(../Imagenes/Flores/bull.jpg);
 }
-.abul{
+
+.abul {
     background-image: url(../Imagenes/Flores/indian.jpg);
 }
-.little{
+
+.little {
     background-image: url(../Imagenes/Flores/31.webp);
 }
-.unec{
+
+.unec {
     background-image: url(../Imagenes/Flores/militar.avif);
 }
-.moha{
+
+.moha {
     background-image: url(../Imagenes/Flores/arab.webp);
 }
-.andrei{
+
+.andrei {
     background-image: url(../Imagenes/Flores/saffron.jpg);
 }
-.ana{
+
+.ana {
     background-image: url(../Imagenes/Flores/terminator.webp);
 }
-.oliveira{
+
+.oliveira {
     background-image: url(../Imagenes/Flores/encanto.avif);
 }
-.garry{
+
+.garry {
     background-image: url(../Imagenes/Flores/river.jpg);
 }
-.alex{
+
+.alex {
     background-image: url(../Imagenes/Flores/chess.webp);
 }

@@ -81,7 +81,7 @@ header {
     border: rgb(0, 108, 141) 0.1em solid;
     display: none;
     position: absolute;
-    min-width: 16em;
+    min-width: 16vw;
     z-index: 1;
     border-radius: 5%;
     background-color: #cafff1;
@@ -91,7 +91,7 @@ header {
 
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: block;
-    padding: 0.75em 1em;
+    padding: 1vw 1vh;
     color: black;
     text-decoration: none;
     font-weight: bold;
