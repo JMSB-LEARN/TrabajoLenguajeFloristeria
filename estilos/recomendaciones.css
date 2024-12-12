@@ -38,7 +38,7 @@ h1 {
     margin-top: 7vh;
 }
 video{display: none;}
-
+/*Comentario que soporta las media*/
 @media(min-width: 1550px) {
     .florRecomendada p {
         max-width: 50%;
