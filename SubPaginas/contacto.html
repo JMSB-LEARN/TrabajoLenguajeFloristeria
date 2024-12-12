@@ -9,6 +9,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/navmenu.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/general.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/personalizado.css'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilos/contacto.css'>
 
 </head>
 
@@ -46,42 +48,43 @@
                 salvar la vida de muchos niños en peligro.</p>
         </div>
         <div>
-            <h1> Si tienes alguna informacion que pueda servir para salvar alguna vida mas puedes rellenar este formulario para ayudar a las autoridades competentes:</h1>
+            <h1> Si tienes alguna informacion que pueda servir para salvar algunas vida mas puedes rellenar este formulario para ayudar a las autoridades competentes:</h1>
             <form action="ContactarAutoridades.php" method="get">
                 <div>
                     <div>
-                        <p>1. ¿Que flor quieres como base?</p>
-                        <p><input required type="radio" name="florbase" value="rosa" />Rosas</p>
-                        <p><input type="radio" name="florbase" value="tulipane" />Tulipanes</p>
-                        <p><input type="radio" name="florbase" value="beladonna" />Beladonnas</p>
-                        <p><input type="radio" name="florbase" value="azuzena" />Azuzenas</p>
-                        <p><input type="radio" name="florbase" value="lirio" />Lirios</p>
-                        <p><input type="radio" name="florbase" value="amapola" />Amapolas</p>
-                        <p><input type="radio" name="florbase" value="wisteria" />Wisterias</p>
+                        <p>1. El suceso presenciado: </p>
+                        <p><input required type="radio" name="cuadno" value="3h" />Acaba de ocurrir (Menos de 3 horas) </p>
+                        <p><input type="radio" name="cuando" value="12h" />hace medio dia (Menos de 12 Dia)</p>
+                        <p><input type="radio" name="cuadno" value="1h" />Hoy</p>
+                        <p><input type="radio" name="cuadno" value="2d" />Es actual (2 Dias)</p>
+                        <p><input type="radio" name="cuando" value="7d" />Esta semana</p>
+                        <p><input type="radio" name="cuando" value="1m" />Este mes</p>
+                        <p><input type="radio" name="cuando" value="1a" />Este año</p>
+                        <p><input type="radio" name="cuando" value="10a" />En la ultima decada</p>
+                        <p><input type="radio" name="cuando" value="old" />Anterior a 10 años</p>
                     </div>
                     <div>
-                        <p>2. ¿Que flor quieres como Acento?</p>
-                        <p><input type="checkbox" name="florAcento" value="rosa" />Rosas</p>
-                        <p><input type="checkbox" name="florAcento" value="tulipane" />Tulipanes</p>
-                        <p><input type="checkbox" name="florAcento" value="beladonna" />Beladonnas</p>
-                        <p><input type="checkbox" name="florAcento" value="azuzena" />Azuzenas</p>
-                        <p><input type="checkbox" name="florAcento" value="lirio" />Lirios</p>
-                        <p><input type="checkbox" name="florAcento" value="amapola" />Amapolas</p>
-                        <p><input type="checkbox" name="florAcento" value="wisteria" />Wisterias</p>
+                        <p>2. ¿De que colectivos vulnerables eran las victima/s?</p>
+                        <p><input type="checkbox" name="colectivo" value="mujeres" />Mujeres</p>
+                        <p><input type="checkbox" name="colectivo" value="discapacidadPsiquica" />Discapacidad Mental</p>
+                        <p><input type="checkbox" name="colectivo" value="discapacidadFisica" />Discapacidad Fisica</p>
+                        <p><input type="checkbox" name="colectivo" value="extranjero" />Persona Extranjera</p>
+                        <p><input type="checkbox" name="colectivo" value="menor18" />Menor de edad (Mayor de 16)</p>
+                        <p><input type="checkbox" name="colectivo" value="menor14" />Menor de edad (Mayor de 14)</p>
+                        <p><input type="checkbox" name="colectivo" value="victimaVioGen" />Victima De Violencia De Genero</p>
                     </div>
                     <div>
-                        <p>3. ¿Que accesorio quieres?</p>
-                        <p><input required type="radio" name="accesorio" value="abeja" />Abejita</p>
-                        <p><input type="radio" name="accesorio" value="estrella" />Estrella</p>
-                        <p><input type="radio" name="accesorio" value="lazo" />Lazo</p>
-                        <p><input type="radio" name="accesorio" value="cinta" />Cintas</p>
-                        <p><input type="radio" name="accesorio" value="calabaza" />Calabazas</p>
-                        <p><input type="radio" name="accesorio" value="limon" />Limones</p>
-                        <p><input type="radio" name="accesorio" value="none" />Ninguno</p>
-                    </div>
-                    <div>
-                        <p>Color del papel del ramo: <input required type="color" name="color" /></p>
-                        <p>Texto nota: <input type="text" pattern=".{0,150}" name="nota" placeholder="I love you" /></p>
+                        <p>Correo de contacto para mas informacion: <input type="text" required pattern="[A-Za-z0-9]+@(gmail|outlook)\.(es|com)" name="CorreoContacto" placeholder="Correo Electronico" /></p>
+                        <p>Descripcion del evento: <input type="text" required pattern=".{0,450}" name="descripcion" placeholder="Describe el evento" /></p>
+                        <p>Como de importante crees que es la informacion dada <input required list="prioridadPercibida" />
+                        <datalist id="prioridadPercibida">
+                            <option value="Critica"></option>
+                            <option value="Alta"></option>
+                            <option value="Media"></option>
+                            <option value="Moderada"></option>
+                            <option value="Baja"></option>
+                            <option value="MuyBaja"></option>
+                        </datalist></p>
                     </div>
                 </div>
                 <div>
