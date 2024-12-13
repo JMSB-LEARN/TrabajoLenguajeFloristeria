@@ -1,0 +1,12 @@
+:root {
+    --color-Menu: rgba(140, 210, 184, 0.94);
+}
+.defensabtn{background-color: var(--color-Menu);
+border-radius: 1vw;
+padding: 1vh;}
+.main{margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+padding-bottom: 2vh;
+background-color: lightgoldenrodyellow;}
